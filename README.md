@@ -1,6 +1,39 @@
 # This repository for leaning Git and GitHub
 I am learning Git and GitHub, this repository contains the notes and commands that I have learned so far.
 
+## Index
+1. [What is Git?](#what-is-git)
+2. [What is GitHub?](#what-is-github)
+3. [What is a Repository?](#what-is-a-repository)
+4. [What is a Branch?](#what-is-a-branch)
+5. [What is a Commit?](#what-is-a-commit)
+6. [What is a Pull Request?](#what-is-a-pull-request)
+7. [What is a Merge Conflict?](#what-is-a-merge-conflict)
+8. [What is a Fork?](#what-is-a-fork)
+9. [What is a Clone?](#what-is-a-clone)
+10. [How configure GitHub?](#how-configure-github)
+11. [Git Commands](#git-commands)
+12. [GitHub Commands](#github-commands)
+13. [How create a new branch and switch to it?](#how-create-a-new-branch-and-switch-to-it)
+14. [How to delete a branch?](#how-to-delete-a-branch)
+15. [How to undo a commit?](#how-to-undo-a-commit)
+16. [How move the changes from a branch to another?](#how-move-the-changes-from-a-branch-to-another)
+17. [How to remove a commit that has been pushed to the remote repository?](#how-to-remove-a-commit-that-has-been-pushed-to-the-remote-repository)
+18. [How to remove a commit that has not been pushed to the remote repository?](#how-to-remove-a-commit-that-has-not-been-pushed-to-the-remote-repository)
+19. [How to remove a commit that has been pushed to the remote repository and you want to keep the changes?](#how-to-remove-a-commit-that-has-been-pushed-to-the-remote-repository-and-you-want-to-keep-the-changes)
+20. [How to remove a commit that has been pushed to the remote repository and you want to discard the changes?](#how-to-remove-a-commit-that-has-been-pushed-to-the-remote-repository-and-you-want-to-discard-the-changes)
+21. [How to remove a commit that has been pushed to the remote repository and you want to keep the changes in the staging area?](#how-to-remove-a-commit-that-has-been-pushed-to-the-remote-repository-and-you-want-to-keep-the-changes-in-the-staging-area)
+22. [How to remove a commit that has been pushed to the remote repository and you want to keep the changes in the working directory?](#how-to-remove-a-commit-that-has-been-pushed-to-the-remote-repository-and-you-want-to-keep-the-changes-in-the-working-directory)
+23. [How to remove a file from the staging area?](#how-to-remove-a-file-from-the-staging-area)
+24. [How to remove a file from the working directory?](#how-to-remove-a-file-from-the-working-directory)
+25. [How to rename a file?](#how-to-rename-a-file)
+26. [How to show the changes between commits?](#how-to-show-the-changes-between-commits)
+27. [How to show the changes between the working directory and the staging area?](#how-to-show-the-changes-between-the-working-directory-and-the-staging-area)
+28. [How to show the changes between the working directory and the last commit?](#how-to-show-the-changes-between-the-working-directory-and-the-last-commit)
+29. [How to show the changes between the staging area and the last commit?](#how-to-show-the-changes-between-the-staging-area-and-the-last-commit)
+30. [How to show the changes between two branches?](#how-to-show-the-changes-between-two-branches)
+
+
 ## What is Git?
 Git is a version control system that lets you manage and keep track of your source code history. It is designed to handle everything from small to very large projects with speed and efficiency.
 
@@ -55,6 +88,23 @@ git config --global user.email "
 4. `git clone` - This command is used to obtain a repository from an existing URL.
 5. `git remote -v` - This command shows the URL of the remote repository.
 
+### How create a new branch and switch to it?
+To create a new branch and switch to it, use the command `git checkout -b <branch>`.
+```bash
+git checkout -b <branch>
+```
+
+### How to delete a branch?
+To delete a branch, use the command `git branch -d <branch>`.
+```bash
+git branch -d <branch>
+```
+
+### How to undo a commit?
+To undo a commit, use the command `git reset --soft HEAD^`.
+```bash
+git reset --soft HEAD^
+```
 
 ### How move the changes from a branch to another?
 To move the changes from a branch to another, use the command `git cherry-pick <commit>`.
@@ -99,12 +149,6 @@ The staging area is a place where you can group changes before committing them t
 To remove a commit that has been pushed to the remote repository and you want to keep the changes in the working directory, use the command `git reset --mixed HEAD`.
 ```bash
 git reset --mixed HEAD
-```
-
-### How create a new branch and switch to it?
-To create a new branch and switch to it, use the command `git checkout -b <branch>`.
-```bash
-git checkout -b <branch>
 ```
 
 ### How to remove a file from the staging area?
