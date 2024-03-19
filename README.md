@@ -88,6 +88,40 @@ git config --global user.email "
 4. `git clone` - This command is used to obtain a repository from an existing URL.
 5. `git remote -v` - This command shows the URL of the remote repository.
 
+### How add incons to the commit message?
+To add icons to the commit message, use the following commands:
+```bash
+"🎉" - `:tada:` - to indicate the first commit
+"📝" - `:pencil:` - when writing docs
+"🚑" - `:ambulance:` - when fixing a critical bug
+"🐛" - `:bug:` - when fixing a bug
+"🔧" - `:wrench:` - when making general changes
+"🚀" - `:rocket:` - when making improvements
+"🔥" - `:fire:` - when removing code or files
+"🔒" - `:lock:` - when dealing with security
+"👌" - `:ok_hand:` - when updating the UI and style files
+"🚨" - `:rotating_light:` - when dealing with tests
+"👌" - `:ok_hand:` - when updating the UI and style files
+"🔖" - `:bookmark:` - when releasing or version tags
+"🚧" - `:construction:` - when working on a work in progress
+"👷" - `:construction_worker:` - when working on CI/CD
+"📦" - `:package:` - when updating compiled files or packages
+"👽" - `:alien:` - when updating the code due to external API changes
+"🚚" - `:truck:` - when moving or renaming files
+"📈" - `:chart_with_upwards_trend:` - when adding analytics or tracking code
+"🗃" - `:card_file_box:` - when performing database related changes
+"📚" - `:books:` - when writing code comments or documentation
+"💩" - `:poop:` - when writing bad code that needs to be improved
+"🍎" - `:apple:` - when fixing something on macOS
+"🐧" - `:penguin:` - when fixing something on Linux
+"🏁" - `:checkered_flag:` - when fixing something on Windows
+"🤖" - `:robot:` - when fixing something on Android
+"🍏" - `:green_apple:` - when fixing something on iOS
+"🔍" - `:mag:` - when improving SEO
+"🏡" - `:house:` - when working on the homepage
+
+```
+
 ### How create a new branch and switch to it?
 To create a new branch and switch to it, use the command `git checkout -b <branch>`.
 ```bash
